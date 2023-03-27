@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(119,119,119);
+}
+
+header {
+  font-size: 24px;
+  text-align: center;
+}
+
+header h1 {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 > img {
+  width: 50px;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid #eee;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.form-control:focus {
+  outline: 1px solid rgb(14,211,207);
+}
+
+.flex {
+  display: flex;
+  gap: 6px;
+}
+
+.flex > input[type='button'] {
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: rgb(255,255,255);
+  background-color: rgb(14,211,207);
+}
+
+.btn-secondary {
+  color: rgb(255,255,255);
+  background-color: rgb(241, 245, 249);
+}
+
+.btn-primary:hover {
+  background-color: rgba(14, 211, 208, 0.6);
+}
+
+.btn-secondary:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.main-content {
+  max-width: 32rem;
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 90px;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #eee;
+}
+
+.todo-list li > span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.todo-list li:first-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.todo-list li:last-child {
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.todo-list > li + li {
+  border-top-width: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(217,217,217);
+}
+
+.clear-completed, .actions {
+  font-size: 12px;
+  padding: 6px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: inherit;
+  cursor: pointer;
+}
+
+.selected {
+	border: 1px solid rgb(14,211,207);
+  background-color: rgb(241, 245, 249);
+  font-weight: normal;
+  border-radius: 6px;
+}
+
+
